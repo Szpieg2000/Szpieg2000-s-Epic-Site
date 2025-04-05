@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<title>Szpieg2000's Site</title>
+		<link rel="icon" type="image/x-icon" href="Assets/WebsiteIco.ico">
+		<meta charset="UTF-8">
+		<meta name="description" content="My own Portfolio-ish Website!">
+		<meta name="keywords" content="Szpieg2000, Wodozar, Lua, Roblox, Garry's Mod, GMod, Source Engine, Source, Developer, Coder, PLKUPA2, Team Fortress 2, TF2, Miencraft, MC, Polish, Stud Pole Studios, Stud Pole">
+		<meta name="author" content="Szpieg2000">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<style>
+		
+		@font-face {
+			font-family: 'TF2Build';
+			src: url(Assets/Fonts/tf2build.ttf);
+		}
+
+		@font-face {
+			font-family: 'TF2Prof';
+			src: url(Assets/Fonts/tf2professor.ttf);
+		}
+
+		body{
+		background-color: #1D1D1D;
+		margin:0px;
+		padding:0px;
+		}
+	
+		@keyframes BackgroundBar {
+			0% {background-position-x: 108px;};
+			100% {background-position-x: 8px;};
+		}
+
+
+		#TopBar {
+			padding:0px;
+			margin-left:auto;
+			margin-right:auto;
+
+			position:fixed;
+			width:600px;
+			height:95px;
+			background-color:#B3B3B3;
+			
+			border-bottom: 5px dotted black;
+			background-image:url("Assets/Images/Roblox Studs.Png");
+			background-position-y: 44px;
+			background-position-x: center;
+			background-repeat: repeat;
+
+			animation-name: BackgroundBar;
+			animation-timing-function: linear;
+			animation-duration: 1.5s;
+			animation-fill-mode: backwards;
+			animation-iteration-count: infinite;
+
+		}
+
+		#TopBar:hover{animation-play-state: paused;}
+
+		#BottomTopBar {
+			width:100%;
+			height:40%;
+			font-size:xx-large;
+			white-space:nowrap;
+			overflow:hidden;
+			position: relative;
+		}
+		
+		@keyframes StudLinkScroll {
+			0% {transform: translateX(0%);}
+			100% {transform: translateX(-100%);}
+		}
+
+		#scrolling-links {
+			display: inline-block;
+			padding-left: 100%;
+			animation: StudLinkScroll 15s linear infinite;
+		}
+
+		#BottomTopBar:hover #scrolling-links {
+			animation-play-state: paused;
+		}
+
+		#scrolling-links a {
+			display: inline-block;
+			padding: 0 8px;
+			border-left: 4px dashed black;
+			margin-right: 20px;
+			text-decoration: none;
+			color:brown;
+		}
+
+		#scrolling-links a:hover {
+			color: red;
+			font-weight: bold;
+		}
+
+	
+		#MainCenter {
+			padding:0px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: white;
+			height:200%;
+			width:600px;
+		}
+		#TopTopBar {
+			display: flex;
+			gap: 8px;
+			padding-left: 8px;
+			padding-right: 8px;
+			width:calc(100% - 16px);
+			height:60%;
+			background-color:#909090;
+		}
+
+		#PLKSpin {
+			text-align:center;
+			aspect-ratio: 1/1;
+			height:100%;
+			background-color:#B3B3B3;
+			border-radius: 50%;
+			align-items: middle;
+		}
+
+		#SpyText{
+			align-items: center;
+			text-decoration-line: underline;
+			line-height: -50%;
+			height: 100%;
+			width: 55%;
+			font-style: italic;
+			color:green;
+			text-decoration-color: #00ff00;
+			font-family: 'TF2Build';
+			font-size: xx-large;
+			
+		}
+		#UnderSpy{
+			text-decoration-line: none;
+			align-items: center;
+			line-height: -50%;
+			height: 100%;
+			width: 145%;
+			color: #00ff00;
+			text-decoration-color: #00ff00;
+			font-family: 'TF2Prof';
+			font-size: x-large;
+		
+		}
+
+	</style>
+	</head>
+	
+	<body>
+		<div id="MainCenter">
+			<!-- TopBar -->
+			<div id="TopBar">
+				<div id="TopTopBar">
+						<img src="Assets/SpinnigPLK.gif" id="PLKSpin">	
+						<div id="SpyText">
+							Szpieg2000 Site!!!
+							<div id="UnderSpy">
+								GET OFF MY BACK! THIS SITE ISN'T DONE YET BRO!
+							</div>
+						</div>
+				</div>
+	
+				<!-- Stud Links -->
+				<div id="BottomTopBar">
+					<div id="scrolling-links">
+						<a href="https://steamcommunity.com/workshop/filedetails/?id=3116332724">
+							Garry's Mod Steam Workshop
+						</a>
+						<a href="https://www.roblox.com/communities/15165785/Stud-Pole-Games">
+							Retro Pole Studio
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
